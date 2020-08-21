@@ -14,10 +14,10 @@ driver = webdriver.Firefox(executable_path="C:\Driver\geckodriver-v0.26.0-win64\
 
 driver.get("https://www.google.co.in")
 
-print(driver.title) # Return title of the webpage
+print(driver.title)  # Return title of the webpage
 
-print(driver.current_url) # Return URL of the webpage
+print(driver.current_url)  # Return URL of the webpage
 
-print(driver.page_source) # Return HTML code of the webpage
+print(driver.page_source)  # Return HTML code of the webpage
 
-driver.close() # Close the webdriver
+driver.close()  # Close the webdriver

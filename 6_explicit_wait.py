@@ -15,13 +15,12 @@ driver.implicitly_wait(5)
 
 driver.maximize_window()  # This will maximize the window
 
-driver.get("https://www.expedia.com/")
+driver.get("https://www.yatra.com/")
 
-# Flight Button
-driver.find_element_by_xpath(
-    "/html/body/div[1]/div[1]/div/div[2]/div/div[2]/div/figure/div[3]/div/div/div/ul/li[2]/a").click()
+# Flight Origin City
+driver.find_element_by_xpath('//*[@id="BE_flight_origin_city"]').click()
+driver.find_element_by_xpath('//*[@id="BE_flight_origin_city"]').send_keys("NYC")
 
-time.sleep(2)  # Sleep command from Python
-
-driver.find_element_by_xpath('//*[@id="wizard-flight-tab-roundtrip"]/div/div[1]/div/div[1]/div/div/div/button').click()
-driver.find_element_by_id("location-field-destination").send_keys("NYC")
+# Flight Destination City
+driver.find_element_by_xpath('//*[@id="BE_flight_arrival_city"]').click()
+driver.find_element_by_xpath('//*[@id="BE_flight_arrival_city"]').send_keys("DEL")

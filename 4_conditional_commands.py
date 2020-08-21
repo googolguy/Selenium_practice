@@ -16,8 +16,8 @@ driver.get("http://newtours.demoaut.com/")
 
 usr = driver.find_element_by_name("userName")
 print("Status of Username Textbox: ")
-print(usr.is_displayed()) # Returns True or False based on element status
-print(usr.is_enabled()) # Returns either True of False
+print(usr.is_displayed())  # Returns True or False based on element status
+print(usr.is_enabled())  # Returns either True of False
 
 usr.send_keys("mercury")
 
@@ -33,6 +33,6 @@ driver.find_element_by_name("login").click()
 
 # Once login is completed to check if roundtrip radio button is selected or not on flight booking page
 rund_radio = driver.find_element_by_css_selector("input[value=roundtrip]")
-print("Round Trip radio button status: ", rund_radio.is_selected()) # Print status of round trip radio button
+print("Round Trip radio button status: ", rund_radio.is_selected())  # Print status of round trip radio button
 
 driver.close()
