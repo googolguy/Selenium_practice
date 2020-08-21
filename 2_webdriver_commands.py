@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Feb  9 21:05:49 2020
-
-@author: aditipc
-
-Description:
+Description: Basic webdriver commands
 """
 from selenium import webdriver
 import time

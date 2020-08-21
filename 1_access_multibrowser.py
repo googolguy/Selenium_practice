@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Feb  9 10:41:49 2020
-
-@author: aditipc
-
-Description: This code explains how to access Chrome and Firefox Browser and 
+Description: This code explains how to access Chrome and Firefox Browser and
 performs basic commands of fetching title, URL and HTML code of webpage.
 """
 
